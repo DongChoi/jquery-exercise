@@ -75,6 +75,16 @@
 <script src="https://unpkg.com/jquery"></script>
 <script>
   // Add your code here!
+  const $articleTagImage = $("article>img");
+  $articleTagImage.addClass("image-center");
+  const $articleTag = $("article p:last-child");
+  $articleTag.remove() //$("article").remove
+  const $titleTag = $("#title");
+  $titleTag
+  .css("font-size", Math.random()*100);
+  const $listTag = $("ol");
+  let newElement = $("<li>Whats up my guy</li>");
+  $listTag.append(newElement)
 </script>
 </body>
 
