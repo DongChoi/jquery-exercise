@@ -84,7 +84,27 @@
   .css("font-size", Math.random()*100);
   const $listTag = $("ol");
   let newElement = $("<li>Whats up my guy</li>");
-  $listTag.append(newElement)
+  $listTag.append(newElement);
+  let $aside = $("aside");
+  $aside
+  .empty()
+  .html("<p> im sorry </p>");
+  let $formControl = $(".form-control");
+  let $body = $("body");
+  
+
+
+  $formControl
+  .on("change", (evt) => {
+    //$body.css("background-color", rgb($formControl.val()))
+    let values = jQuery(evt.target.value)
+    let $formControl1 = $formControl.get(0);
+    let $formControl2 = $formControl.get(1);
+   let $formControl3 = $formControl.get(2);
+  })
+ 
+
+
 </script>
 </body>
 
